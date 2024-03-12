@@ -2,6 +2,7 @@ FROM centos/s2i-base-centos7
 # This image provides a Node.JS environment you can use to run your
 # Node.JS applications.
 
+VOLUME /opt/app-root/src/scripts/
 EXPOSE 8080
 
 # This image will be initialized with "npm run $NPM_RUN"
